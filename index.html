@@ -14,14 +14,14 @@
 
 
 </head>
-<body>
+<body class="bg-[#CFF0DC50]">
     <!-- navbar  -->
     <header class="bg-[#15803D]">
         <nav class="borderline mx-auto flex justify-between items-center py-3 px-3">
             <a class="text-white font-semibold text-2xl" href="">Green Earth</a>
 
             <ul class="hidden text-white text-sm md:flex gap-6">
-                <li><a href="">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="">Gallery</a></li>
                 <li><a href="">Plant a Tree</a></li>
             </ul>
@@ -30,7 +30,6 @@
         </nav>
     </header>
     <!-- Banner section -->
-
     <section class="relative bg-[#CFF0DC] flex flex-col items-center justify-center text-center px-6 py-16 bg-[url('./assets/hero-leaf1.png')] bg-no-repeat bg-contain bg-center md:bg-none">
 
         <div class="z-10 flex flex-col items-center gap-4 md:w-1/2">
@@ -44,7 +43,117 @@
         <img class="hidden md:block absolute right-0 top-0 h-full w-auto" src="./assets/hero-leaf2.png" alt="Leaf Right">
 
     </section>
+<!-- Main body section -->
+    <main id="shop" class="borderline mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 px-3 py-10 ">
+        <!-- Catagory section -->
+        <aside class="lg:col-span-3">
+            <h2 class="font-semibold text-xl mb-3">Categories</h2>
+            <!-- Spinner  -->
+            <div id="cat-spinner" class="hidden my-3">
+                <span class="loading loading-spinner loading-md"></span>
+            </div>
 
+            <div id="category-list" class="flex flex-row flex-wrap items-center gap-2 md:flex-col">
+            <!-- catagory button thakbe -->
+            </div>
+        </aside>
+        <!-- Cards section -->
+        <section class="lg:col-span-6">
+            <h2 class="text-center text-xl font-semibold mb-3">Choose Your Trees</h2>
+            <!-- Spinner -->
+            <div id="card-spinner" class="hidden my-6 flex justify-center">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
+            <div id="card-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Cards will be here -->
+            </div>
+        </section>
+
+
+        <!-- Cart section right side -->
+        <aside class="md:col-span-3 bg-white rounded-xl p-3">
+            <div class="sticky top-4">
+                <h3 class="font-semibold text-lg mb-3">Your Cart</h3>
+                <ul id="cart-list" class="space-y-2 mb-4">
+                <!-- Cart items appear here -->
+                </ul>
+
+                <div class="flex items-center justify-between font-semibold border-t pt-3">
+                    <span class="text-lg">Total:</span>
+                    <span id="cart-total" class="text-lg">৳ 0</span>
+
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- About the campaign -->
+    <section id="about" class="my-5 borderline mx-auto">
+        <h1 class="text-black  text-2xl font-semibold text-center mb-7">About the Campaign</h1>
+        <div class="flex flex-col items-center md:flex-row ">
+            <img class="p-5" src="./assets/about.png" alt="">
+
+            <div class="flex flex-col ml-10">
+                <p class="opacity-80 text-left mb-5">Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+            <ul class="opacity-80 list-disc ml-10 mt-2 ">
+                <li>Restoration of natural habitats</li>
+                <li>Improvement of air quality</li>
+                <li>Support for local communities</li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    <!-- impact section -->
+    <section id="impact" class="bg-green-100">
+    <div class="borderline mx-auto px-5 py-12">
+      <h2 class="text-center text-xl md:text-2xl font-bold mb-8">Our Impact</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card bg-white shadow">
+          <div class="card-body items-center">
+            <h3 class="text-3xl font-extrabold">500K+</h3>
+            <p class="opacity-70 text-sm">Trees Planted</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow">
+          <div class="card-body items-center">
+            <h3 class="text-3xl font-extrabold">120+</h3>
+            <p class="opacity-70 text-sm">Communities Involved</p>
+          </div>
+        </div>
+        <div class="card bg-white shadow">
+          <div class="card-body items-center">
+            <h3 class="text-3xl font-extrabold">30+</h3>
+            <p class="opacity-70 text-sm">Countries Reached</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- form section -->
+    <section id="plant" class="bg-[#166534] ">
+        <h2 class="text-center text-xl md:text-2xl font-bold p-5 text-white">Plant a Tree Today</h2>
+        <div class="container mx-auto px-5 py-10 text-black">
+
+            <form class="max-w-xl mx-auto bg-[#15803D] p-5 rounded-xl space-y-3">
+                <input type="text" placeholder="Your Name" class="input input-bordered w-full" required />
+                <input type="email" placeholder="Your Email Address" class="input input-bordered w-full" required />
+                <select class="select select-bordered w-full" required>
+                    <option disabled selected>Number of Trees</option>
+                    <option>1</option>
+                    <option>3</option>
+                    <option>5</option>
+                    <option>10</option>
+                </select>
+                <button type="submit" class="btn bg-yellow-400 text-black border-none hover:bg-yellow-300 w-full rounded-3xl">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center text-sm py-6 bg-[#14532D] text-white">
+    © 2025 Green Earth. All Rights Reserved.
+    </footer>
 
 
     
