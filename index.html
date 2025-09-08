@@ -30,17 +30,22 @@
         </nav>
     </header>
     <!-- Banner section -->
-     <section class="flex justify-between items-center bg-[#CFF0DC]">
-        <img src="./assets/hero-leaf1.png" alt="">
 
-        <div class="flex flex-col items-center gap-4">
-            <h1 class="text-[#1F2937] text-5xl font-bold">Plant a Tree, Grow a Future</h1>
-            <p class="text-[#1F2937] font-light text-center">Join our mission to plant 1 million trees and make the Earth greener for future <br>generations.</p>
-            <a class="text-green-900 text-sm p-5 mx-5 btn btn-sm rounded-3xl bg-yellow-400 border-none hover:bg-yellow-300" href="">Get Involved</a>
+    <section class="relative bg-[#CFF0DC] flex flex-col items-center justify-center text-center px-6 py-16 bg-[url('./assets/hero-leaf1.png')] bg-no-repeat bg-contain bg-center md:bg-none">
+
+        <div class="z-10 flex flex-col items-center gap-4 md:w-1/2">
+            <h1 class="text-[#1F2937] text-3xl md:text-5xl font-bold leading-snug">Plant a Tree, Grow a Future</h1>
+            <p class="bg-[#F2EEEB80] font-semibold md:bg-transparent text-[#1F2937] md:font-light">Join our mission to plant 1 million trees and make the Earth greener for future generations. </p>
+            <a href="#" class="text-green-900 text-sm md:text-base px-6 py-3 btn btn-sm rounded-3xl bg-yellow-400 border-none hover:bg-yellow-300">Get Involved</a>
         </div>
-        
-        <img src="./assets/hero-leaf2.png" alt="">
-     </section>
+
+        <!-- Desktop-only Images -->
+        <img class="hidden md:block absolute left-0 top-0 h-full w-auto" src="./assets/hero-leaf1.png" alt="Leaf Left">
+        <img class="hidden md:block absolute right-0 top-0 h-full w-auto" src="./assets/hero-leaf2.png" alt="Leaf Right">
+
+    </section>
+
+
 
     
 
